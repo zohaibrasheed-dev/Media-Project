@@ -3,7 +3,11 @@ import './App.css'
 function App() {
 
   return (
-    <h1>Hellow World!</h1>
+    <>
+    <button type="button" >Get from Unsplash</button>
+    <button type="button" >Get from Pexels</button>
+    <button type="button" >Get Gif from Klipy</button>
+    </>
   )
 }
 
