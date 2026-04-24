@@ -1,12 +1,15 @@
-import './App.css'
+import './App.css';
+import Header from './components/Header';
+import MainLayout from './components/MainLayout';
 
 function App() {
 
   return (
     <>
-    <button type="button" >Get from Unsplash</button>
-    <button type="button" >Get from Pexels</button>
-    <button type="button" >Get Gif from Klipy</button>
+      <div className="grid wrapper">
+        <Header />
+        <MainLayout />
+      </div>
     </>
   )
 }

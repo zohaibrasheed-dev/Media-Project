@@ -1,9 +1,15 @@
+import axios from 'axios';
 
+const UNSPLASH_KEY = import.meta.env.VITE_UNSPLASH_KEY;
 
+export const callUnsplash = async (searchKeyword) => {
+    const res = await axios.get('https://api.unsplash.com/search/photos', {
+        params: {query: searchKeyword},
+        headers: { Authorization: `Client-ID ${UNSPLASH_KEY}`}
+    })
 
-
-
-
+    console.log(res.data.results);
+}
 
 
 
