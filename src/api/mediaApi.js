@@ -8,7 +8,7 @@ export const callUnsplash = async (searchKeyword) => {
         headers: { Authorization: `Client-ID ${UNSPLASH_KEY}`}
     })
 
-    console.log(res.data.results);
+    return(res.data.results);
 }
 
 
